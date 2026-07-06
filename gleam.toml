@@ -1,0 +1,17 @@
+name = "burung_chat_app_ws"
+version = "1.0.0"
+description = "Starter project untuk WebSocket massal (mass websocket) menggunakan Gleam"
+
+[dependencies]
+gleam_stdlib = ">= 0.34.0 and < 2.0.0"
+gleam_otp = ">= 0.10.0 and < 1.0.0"
+gleam_erlang = ">= 0.25.0 and < 1.0.0"
+mist = ">= 1.0.0 and < 2.0.0"
+gleam_http = ">= 3.0.0 and < 4.0.0"
+# Ditambahkan untuk encode/decode JSON asli di websocket/protocol.gleam.
+# CEK ULANG versi ini lawan `gleam docs build` / hex.pm punya kamu, saya
+# tidak bisa akses hex.pm dari sandbox jadi range ini estimasi.
+gleam_json = ">= 1.0.0 and < 3.0.0"
+
+[erlang]
+application_start_module = "app"
